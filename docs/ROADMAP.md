@@ -10,7 +10,7 @@ Design reference: [ARCHITECTURE.md](ARCHITECTURE.md) · Reasons: [NOTEBOOK.md](N
 
 ---
 
-## Phase 0 — Setup (Tue 6 – Wed 7 Oct) 🟨 (only 0.5, the first commit, is left)
+## Phase 0 — Setup (Tue 6 – Wed 7 Oct) ✅
 
 | # | Task | Status |
 |---|---|---|
@@ -18,7 +18,7 @@ Design reference: [ARCHITECTURE.md](ARCHITECTURE.md) · Reasons: [NOTEBOOK.md](N
 | 0.2 | Start Docker Desktop; `docker/Dockerfile` for Ubuntu 24.04 with clang, gcc, cmake, gdb, valgrind, redis, jemalloc and mimalloc libraries. `perf` left out: it needs host kernel access, which Docker on the Mac lacks; install it on the Phase 4 benchmark machine | ✅ |
 | 0.3 | `CMakeLists.txt` with two targets (`arena_core` static, `arena` shared). Flags: `-O2 -fno-builtin -fno-exceptions -fno-rtti -fvisibility=hidden`. Build types: Release / Debug / TSan / ASan | ✅ |
 | 0.4 | Test framework: a tiny assert-based runner (no GoogleTest, see D-016) plus a `ctest` target | ✅ |
-| 0.5 | First commit with the docs and an empty skeleton that compiles | ⬜ |
+| 0.5 | First commit (made 2026-10-12 together with Phase 1, `664942e`, pushed to GitHub) | ✅ |
 
 **Done when:** `docker run … cmake --build build && ctest` passes on an empty test inside the container.
 

@@ -114,3 +114,14 @@ Entry format:
 1. Commit Phase 0 + 1 (waiting for Anvi's go-ahead).
 2. Phase 2: per-thread heaps with `initial-exec` TLS, bootstrap memory for heaps, `thread_free` remote frees, thread exit, then remove the global lock (D-021).
 3. Study: Part 3 of NOTEBOOK.md (11 questions), then the mimalloc paper sections 2–3 before Phase 2.
+
+---
+
+## 2026-10-12 — Session 4 — First commit, pushed to GitHub
+
+**Done:**
+- Commit `664942e` "Arena Phase 0 + 1": 33 files, all of Phase 0 and Phase 1. `build/` is excluded by `.gitignore`. Checked before committing: no personal data or secrets in the tracked files.
+- Remote: `origin` = `git@github.com:anvidev01/arena.git` (SSH; the `gh` CLI is not logged in). `main` pushed and tracking `origin/main`.
+- Roadmap task 0.5 ticked.
+
+**Next:** Phase 2 (per-thread heaps, remote frees, remove the global lock).

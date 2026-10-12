@@ -28,6 +28,7 @@ Dates are absolute (`YYYY-MM-DD`). Explain things for someone who is learning: s
 - Comments explain *why* (invariants, ordering, hazards), not what the next line does. Every struct field that is shared between threads says who reads and who writes it.
 - Tests call the `arena_*` core API (so TSan and ASan work). `LD_PRELOAD` is only for real-program runs.
 - Small, focused commits so `git bisect` works. Commit only when Anvi asks.
+- Remote: `origin` = `git@github.com:anvidev01/arena.git` (push over SSH; `gh` is not logged in, so it can't create repos or PRs).
 
 ## Environment
 - Host: Apple M4 Mac, macOS 15.7 (arm64). Arena does **not** build natively on macOS (D-001).
